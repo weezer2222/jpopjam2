@@ -159,6 +159,7 @@ header nav ul li a img{
   height: auto;
 }
 
+
 /* スマホ用ヘッダー */
 @media (max-width: 767px){
   .beforeopen{
@@ -413,10 +414,20 @@ header nav ul li a img{
   padding-top: 8px;
   text-align: center;
 }
+
+.form .messageresp {
+  display: none;
+}
+
 .form .message a {
   color: #000;
   text-decoration: none;
 }
+
+.message a:hover, a:active{
+  opacity: 0.7;
+}
+
 .form .register-form {
   display: none;
 }
@@ -492,11 +503,33 @@ header nav ul li a img{
     bottom: 0;
     position: relative;
     max-width: 263px;
+    padding: 30px 40px 30px 40px;
   }
 
   .new{
-    margin-left: 5px;
-    margin-right: 5px;
+    display: block;
+  }
+
+  .form button{
+    margin: 15px auto 0px;
+  }
+
+  .form .messageresp{
+    display: block;
+    margin: 5px 0px;
+    color: #000;
+    font-size: 11px;
+    padding-top: 8px;
+    text-align: center;
+  }
+
+  .message{
+    display: none;
+  }
+
+  .form .messageresp a {
+    color: #000;
+    text-decoration: none;
   }
 }
 
@@ -654,13 +687,15 @@ margin-left: 50px;
 }
 
 .nexteventcontent{
-  display: flex;
+  /* display: flex; */
   margin-top: 70px;
+  margin-left: 108px;
 }
 
 .nexteventimg{
-  margin-left: 108px;
-  margin-top: 20px;
+  margin-right: 60px;
+  margin-bottom: 40px;
+  float: left;
 }
 
 .nexteventtext {
@@ -669,7 +704,6 @@ margin-left: 50px;
 	font-size: 13px;
 	line-height: 25px;
   margin-right: 108px;
-  margin-left: 66px;
 }
 
 .reservation{
@@ -970,12 +1004,14 @@ hr {
   .nexteventcontent{
     display: block;
     margin-top: 35px;
+    margin-left: 0;
   }
 
   .nexteventimg{
     text-align: center;
     margin-left: 0;
     margin-right: 0;
+    float: none;
   }
 
   .nexteventtext{
